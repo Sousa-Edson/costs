@@ -1,10 +1,14 @@
-import {Link, link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import styles from "./ProjectCard.module.css";
 
 import { BsPencil, BsFillTrashFill } from "react-icons/bs";
 
 function ProjetctCard({ id, name, budget, category, handleRemove }) {
+  const remove =(e)=>{
+    e.preventDefault()
+    handleRemove(id)
+  }
   return (
     <div className={styles.project_card}>
       <h4>{name}</h4>
@@ -17,8 +21,8 @@ function ProjetctCard({ id, name, budget, category, handleRemove }) {
         {category}
       </p>
       <div className={styles.project_card_actions}>
-      <Link to="/"><BsPencil/> Editar</Link>
-        <button>
+      <Link to={`/project/${id}`}><BsPencil/> Editar</Link>
+        <button onClick={remove}>
             <BsFillTrashFill/> Excluir
         </button>
       </div>
