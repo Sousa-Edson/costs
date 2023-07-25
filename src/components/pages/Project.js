@@ -14,6 +14,7 @@ function Project() {
     const { id } = useParams()
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
+    const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState('')
     const [type, setType] = useState('success')
     useEffect(() => {
@@ -31,6 +32,7 @@ function Project() {
         }, 300)
     }, [id])
     function editPost(project) {
+        setMessage('')
         //budget validation
         if (project.budget < project.cost) {
             setMessage('O orçamento não pode ser menor que o custo do projeto!')
@@ -39,7 +41,7 @@ function Project() {
         }
         fetch(`http://localhost:5000/projects/${project.id}`, {
             method: 'PATCH',
-            headers: { 'Content-Type': 'appIlication/json', },
+            headers: { 'Content-Type': 'application/json', },
             body: JSON.stringify(project),
         }).then(resp => resp.json())
             .then((data) => {
@@ -52,6 +54,9 @@ function Project() {
     }
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
+    }
+    function toggleServiceForm() {
+        setShowServiceForm(!showServiceForm)
     }
     return (
         <>
@@ -82,6 +87,21 @@ function Project() {
                                 </div>
                             )}
                         </div>
+                        <div className={styles.service_form_container}>
+                            <h2>Adicione um serviço:</h2>
+                            <button className={styles.btn} onClick={toggleServiceForm}>
+                                {!showServiceForm ? 'Adicionar Serviço' : 'Fechar'}
+                            </button>
+                            <div className={styles.form}>
+                                {showServiceForm && (
+                                    <div>Formulario de serciço</div>
+                                )}
+                            </div>
+                        </div>
+                        <h2>Serviços:</h2>
+                        <Container customClass="start">
+                            <p>itens de serviço</p>
+                        </Container>
                     </Container>
                 </div>
             ) : (
