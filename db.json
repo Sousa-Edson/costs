@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "aquui",
-      "budget": "12",
+      "name": "doce",
+      "budget": "12000",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "service": [],
