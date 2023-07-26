@@ -1,15 +1,29 @@
 {
   "projects": [
     {
-      "name": "doce",
+      "name": "doce 2",
       "budget": "12000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
+      "cost": 1001,
       "service": [],
-      "id": 1
+      "id": 1,
+      "services": [
+        {
+          "name": "s",
+          "cost": "1",
+          "description": "2",
+          "id": "b47afa3a-2d5e-40a1-ad09-0bb07f32cd5c"
+        },
+        {
+          "name": "teste",
+          "cost": "1000",
+          "description": "descrição de teste",
+          "id": "1291f7a8-c65c-477a-8615-ad89d713c1a6"
+        }
+      ]
     },
     {
       "name": "batata doce",
@@ -23,8 +37,8 @@
       "id": 2
     },
     {
-      "name": "batata",
-      "budget": "2",
+      "name": "batata 2",
+      "budget": "200",
       "category": {
         "id": "1",
         "name": "Infra"
