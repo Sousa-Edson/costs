@@ -7,7 +7,7 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1396,
+      "cost": 1399,
       "service": [],
       "id": 1,
       "services": [
@@ -16,96 +16,44 @@
           "cost": "2",
           "description": "2",
           "id": "20aa11a9-bbfb-408e-909a-9e329e5baa61"
+        },
+        {
+          "name": "3",
+          "cost": "3",
+          "description": "3",
+          "id": "23dfc90f-6d50-44f0-ab25-5c8fa5e29512"
         }
       ]
     },
     {
-      "name": "batata doce",
-      "budget": "45",
+      "name": "batata rosa",
+      "budget": "23",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 23,
+      "service": [],
+      "id": 2,
+      "services": [
+        {
+          "name": "teste batata rosa 1",
+          "description": "teste batata rosa 1",
+          "cost": "23",
+          "id": "c8689f68-1007-428f-b891-cd0a2fd82ad0"
+        }
+      ]
+    },
+    {
+      "name": "teste 4",
+      "budget": "233",
       "category": {
         "id": "3",
         "name": "Design"
       },
       "cost": 0,
-      "service": [],
-      "id": 2
-    },
-    {
-      "name": "batata 2",
-      "budget": "200",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "service": [],
+      "services": [],
       "id": 3
-    },
-    {
-      "name": "testeb 6",
-      "budget": "2",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 7
-    },
-    {
-      "name": "teste 6",
-      "budget": "45",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 8
-    },
-    {
-      "name": "teste12",
-      "budget": "3",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 14
-    },
-    {
-      "name": "teste",
-      "budget": "1",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 16
-    },
-    {
-      "name": "teste",
-      "budget": "12",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 17
-    },
-    {
-      "name": "novo projeto",
-      "budget": "900",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 20
     }
   ],
   "categories": [

@@ -7,7 +7,7 @@ function NewProject() {
   function createPost(project){
     // initializa cost and service
     project.cost=0;
-    project.service=[]
+    project.services=[]
  
       fetch('http://localhost:5000/projects', {
         method: 'POST',

@@ -27,7 +27,8 @@ function Project() {
         setTimeout(() => {
             fetch(`http://localhost:5000/projects/${id}`,
                 {
-                    method: 'GET', headers: {
+                    method: 'GET',
+                    headers: {
                         'Content-Type': 'application/json'
                     },
                 }).then(resp => resp.json())
@@ -174,9 +175,8 @@ function Project() {
                         </div>
                         <h2>Serviços:</h2>
                         <Container customClass="start">
-                            {
-                                services.length > 0
-                                &&
+                            {console.log(services.length)}
+                            {services.length > 0 &&
                                 services.map((service) => (
                                     <ServiceCard
                                         id={service.id}
@@ -186,11 +186,8 @@ function Project() {
                                         key={service.id}
                                         handleRemove={removeService}
                                     />
-                                ))
-                            }
-                            {
-                                services.length === 0 && <p>Não há serviços cadastrados</p>
-                            }
+                                ))}
+                            {services.length === 0 && <p>Não há serviços cadastrados.</p>}
                         </Container>
                     </Container>
                 </div>
