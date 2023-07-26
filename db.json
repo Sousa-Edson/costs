@@ -7,7 +7,7 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1001,
+      "cost": 1401,
       "service": [],
       "id": 1,
       "services": [
@@ -22,6 +22,12 @@
           "cost": "1000",
           "description": "descrição de teste",
           "id": "1291f7a8-c65c-477a-8615-ad89d713c1a6"
+        },
+        {
+          "name": "serviço 3",
+          "cost": "400",
+          "description": "descrição serviço 3",
+          "id": "c7ff22a9-d3df-4bb4-809b-c9dd25214492"
         }
       ]
     },
